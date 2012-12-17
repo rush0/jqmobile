@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- jQuery Mobile Stuff -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <style>
+        .ui-icon-gigwerks
+        {
+            background: url('gwtwitter.png');
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        jQuery mobile tutorial</h1>
+    <div id="container" data-role="page" data-theme="b">
+        <header data-role="header">
+        <h1>Page Title</h1>
+    </header>
+        <div data-role="content">
+            <form action="7.htm" method="get">
+            <div data-role="fieldcontain">
+                <label for="firstName">
+                    First Name:</label>
+                <input type="text" name="firstName" id="firstName" />
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="lastName">
+                    Last Name:</label>
+                <input type="text" name="lastName" id="lastName" />
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="age"> Age:</label>
+                <input type="range" min="7" max="120" name="age" id="age" value="" min="7" />
+            </div>
+
+
+<div data-role="fieldcontain">
+<label for="cars">Favorite Car:</label>
+<select name="car" id="car">
+<option value="Honda">Honda</option>
+<option value="Toyota">Toyota</option>
+<option value="Subaru">Subaru</option>
+</select>
+</div>
+
+<div data-role="fieldcontain">
+<p> Hobbies ?</p>
+
+<input type="checkbox" id="movies" name="movies" />
+<label for="movies">Movies</label>
+
+<input type="checkbox" id="sports" name="sports" />
+<label for="sports">Sports</label>
+
+<input type="checkbox" id="eating" name="eating" />
+<label for="eating">Eating</label>
+
+</div>
+
+<div data-role="fieldcontain">
+    <input type="submit" data-theme="b" name="" value="Submit Form" />
+</div>
+
+            </form>
+        </div>
+        <footer data-role="footer">
+        <h4>Page Footer</h4>
+    </footer>
+    </div>
+
+    <script>
+        $('form').submit(function (e) {
+            e.preventDefault();
+            console.log($(this).serialize());
+        });
+    </script>
+</body>
+</html>

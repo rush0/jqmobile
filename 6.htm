@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- jQuery Mobile Stuff -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+    <style>
+    .ui-icon-gigwerks
+    {
+        background:url('gwtwitter.png');
+        border:1px solid black;
+    }
+    </style>
+</head>
+<body>
+<h1>jQuery mobile tutorial</h1>
+
+<div id="container" data-role="page" data-theme="e">
+
+    <header data-role="header">
+        <h1>Page Title</h1>
+    </header>
+
+    <div data-role="content">
+        <a href="#" data-role="button" >Big button</a>
+        <a href="#" data-role="button" data-inline="true">Click Me</a>
+        <input type="submit" value="Submit" data-inline="true"/>
+        <a href="#" data-role="button" data-inline="true" data-icon="gear">Click Me</a>
+        <a href="#" data-role="button" data-inline="true" data-icon="delete">Delete</a>
+        <a href="#" data-role="button" data-inline="true" data-icon="star">Click Me</a>
+
+        <a href="#" data-role="button" data-icon="gigwerks" data-iconpos="right"> Custom</a>
+
+        <!-- Using Grids -->
+        <a href="#" data-role="button" data-inline="true" data-icon="star">Wide Button 1</a>
+        <a href="#" data-role="button" data-inline="true" data-icon="star">Wide Button 2</a>
+    </div>
+
+    <div data-role="content" >
+    
+    <!-- Using Grids -->
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            <input type="submit" name="" value="Grid 1" data-theme="b"/>
+        </div>
+
+        <div class="ui-block-b">
+            <input type="submit" name="" value="Grid 2" />
+        </div>
+
+        <div class="ui-block-c">
+            <input type="submit" name="" value="Grid 3" />
+        </div>
+    </div>
+            
+        
+        
+    </div>
+
+    <footer data-role="footer">
+        <h4>Page Footer</h4>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
